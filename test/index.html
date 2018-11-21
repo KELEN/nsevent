@@ -1,0 +1,19 @@
+<script src="../dist/nsevent.umd.js"></script>
+<script>
+    let nsEvent = new NSEvent();
+
+    nsEvent.on('locationChange', function() {
+        console.log('home location change')
+    }, 'home')
+
+    nsEvent.on('locationChange', function() {
+        console.log('my center location change');
+    }, 'my center');
+
+    nsEvent.emit('locationChange');
+    
+    nsEvent.off('locationChange', 'my center');
+
+    nsEvent.emit('locationChange');
+
+</script>

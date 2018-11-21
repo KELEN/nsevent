@@ -1,0 +1,35 @@
+{
+  "name": "nsevent",
+  "author": {
+    "name": "kelen",
+    "email": "340443366@qq.com",
+    "url": "https://www.kelen.cc"
+  },
+  "version": "0.0.1",
+  "main": "dist/nsevent.cjs.js",
+  "module": "dist/nsevent.esm.js",
+  "browser": "dist/nsevent.umd.js",
+  "dependencies": {
+    "ms": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "blueimp-canvas-to-blob": "^3.14.0",
+    "rollup": "^0.67.0",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-butternut": "^0.1.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
