@@ -5,12 +5,16 @@
     "email": "340443366@qq.com",
     "url": "https://www.kelen.cc"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/nsevent.cjs.js",
   "module": "dist/nsevent.esm.js",
   "browser": "dist/nsevent.umd.js",
   "dependencies": {
     "ms": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KELEN/nsevent"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
